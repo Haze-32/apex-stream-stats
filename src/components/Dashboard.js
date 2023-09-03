@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 import { getFirestore, doc, setDoc } from "firebase/firestore"; // Import directly from Firebase package
 
 // Initialize Firestore once
@@ -9,9 +9,6 @@ const Dashboard = () => {
     // State management
     const [uid, setUid] = useState(null);
     const [inputData, setInputData] = useState('');
-
-    // Navigation
-    const navigate = useNavigate();
 
     // Load UID from local storage once component mounts
     useEffect(() => {
@@ -40,23 +37,28 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="row">
-            {/* Dashboard title */}
-            Dashboard
+        <div className="container-fluid">
+            <div className="row">
+                {/* Dashboard title */}
+                Dashboard
 
-            {/* Display UID if available */}
-            {uid && <div>User ID: {uid}</div>}
+                {/* Display UID if available */}
+                {uid && <div>User ID: {uid}</div>}
 
-            {/* Form for entering data */}
-            <form onSubmit={handleFormSubmit}>
-                <input
-                    type="text"
-                    value={inputData}
-                    onChange={e => setInputData(e.target.value)}
-                    placeholder="Enter your data here"
-                />
-                <button type="submit">Submit</button>
-            </form>
+                {/* Form for entering data */}
+                <form onSubmit={handleFormSubmit}>
+                    <input
+                        type="text"
+                        value={inputData}
+                        onChange={e => setInputData(e.target.value)}
+                        placeholder="Enter your data here"
+                    />
+                    <button type="submit">Submit</button>
+                </form>
+
+                <br />
+                <Link className="" to={`/stats/${uid}`}>Stats</Link>
+            </div>
         </div>
     );
 };
