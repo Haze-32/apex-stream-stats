@@ -27,7 +27,7 @@ const UserStats = () => {
             <h1>User Stats for {uid}</h1>
             {userData ? (
                 <div>
-                    <strong>Field:</strong> {userData.field}
+                    <strong>Field:</strong> {userData.checkedStats}
                     {/* Add more fields as they are available */}
                 </div>
             ) : (

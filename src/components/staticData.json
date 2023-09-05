@@ -609,7 +609,7 @@
                     "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/pathfinder-concept-bg-small.jpg",
                     "portraitImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/portraits/pathfinder.png",
                     "legendColor": "#7ECEEF",
-                    "isActive": true
+                    "isActive": false
                 },
                 "expiryDate": "2023-08-14T23:49:39.6920497+00:00",
                 "stats": {
@@ -680,7 +680,7 @@
                     "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/horizon-concept-bg-small.jpg",
                     "portraitImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/portraits/horizon.png",
                     "legendColor": "#3F69C0",
-                    "isActive": false
+                    "isActive": true
                 },
                 "expiryDate": "2023-08-14T23:49:39.6920497+00:00",
                 "stats": {
