@@ -1,0 +1,111 @@
+:root {
+    --red: #B93038;
+    --dark-red: #A4373D;
+    --orange: #FF501A;
+    --orange-light: #ff9369;
+    --green: #3A401A;
+    --grey: #E3DFD6;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--orange) !important;
+    --bs-btn-border-color: var(--orange-light) !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--orange-light) !important;
+    --bs-btn-hover-border-color: var(--orange-light) !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--orange-light) !important;
+    --bs-btn-active-border-color: var(--orange-light) !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--orange-light) !important;
+    --bs-btn-disabled-border-color: var(--orange-light) !important;
+    font-size: 20px !important;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import './statBox.css';
+@import './navigation.css';
+
+@font-face {
+    font-family: 'Mk2';
+    src: url('../fonts/apex-mk2.regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apex';
+    src: url('../fonts/Apex-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.apexStatsWrap {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Apex';
+    letter-spacing: 1.5px;
+}
+
+.inlineLink {
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.loginBtn {
+    margin-left: 16px;
+}
+
+.signUpBtn {
+    margin-left: 18px;
+}
+
+.loginError {
+    color: var(--dark-red);
+}

@@ -1,0 +1,312 @@
+.apexBtn {
+    position: relative;
+    border: 1px solid var(--grey);
+    border-bottom: 4px solid var(--orange) !important;
+    background: transparent;
+    color: #fff;
+    font-size: 26px;
+    padding: 14px 20px 10px 20px;
+    -webkit-box-shadow: inset 0px -5px 25px 13px rgba(255, 80, 26, 0.47);
+    -moz-box-shadow: inset 0px -5px 25px 13px rgba(255, 80, 26, 0.47);
+    box-shadow: inset 0px -5px 25px 13px rgba(255, 80, 26, 0.47);
+    transition: all .2s ease-out;
+    font-family: 'Mk2';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.apexBtn.copyBtn {
+    padding-top: 18px
+}
+
+.apexBtn:before {
+    content: "";
+    width: 60px;
+    text-align: center;
+    height: 0;
+    position: absolute;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--grey);
+    border-left: 5px solid transparent;
+    box-sizing: content-box;
+    top: 0;
+    left: 50%;
+    transform: translateX(-36px);
+}
+
+.apexBtn:hover {
+    border-bottom: 4px solid var(--red) !important;
+    -webkit-box-shadow: inset 0px -5px 25px 13px rgba(185, 48, 57, 0.47);
+    -moz-box-shadow: inset 0px -5px 25px 13px rgba(185, 48, 57, 0.47);
+    box-shadow: inset 0px -5px 25px 13px rgba(185, 48, 57, 0.47);
+}
+
+.apexBtnSm {
+    line-height: 0;
+    padding: 14px 20px 10px 20px;
+    -webkit-box-shadow: inset 0px -4px 11px 6px rgba(255, 80, 26, 0.47);
+    -moz-box-shadow: inset 0px -4px 11px 6px rgba(255, 80, 26, 0.47);
+    box-shadow: inset 0px -4px 11px 6px rgba(255, 80, 26, 0.47);
+    transition: all .2s ease-out;
+}
+
+.apexBtnSm:hover {
+    border-bottom: 4px solid var(--red) !important;
+    -webkit-box-shadow: inset 0px -4px 11px 6px rgba(185, 48, 57, 0.47);
+    -moz-box-shadow: inset 0px -4px 11px 6px rgba(185, 48, 57, 0.47);
+    box-shadow: inset 0px -4px 11px 6px rgba(185, 48, 57, 0.47);
+}
+
+.apexBtnSm:before {
+    display: none !important;
+}
+
+
+.statSettingsContainerWrap {
+    position: relative;
+}
+
+.apexStatsWrap:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+}
+
+.apexStatsWrap:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url(../../../public/assets/imgs/apex-stats-page-back.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+.blurContainer {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    border: 1px solid #333;
+}
+
+.input-group input,
+.input-group select,
+.input-group .btn {
+    font-size: 16px;
+    padding-bottom: 3px;
+    font-weight: 400;
+}
+
+.input-group input {
+    border-radius: 0;
+    border: 1px solid var(--grey);
+}
+
+.playerSearch input {
+    border-right: none;
+}
+
+.playerSearch select {
+    border-top: 1px solid var(--orange-grey);
+    border-bottom: 1px solid var(--orange-grey);
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: var(--orange-light);
+    outline: 0;
+    box-shadow: 0px 0px 8px .6px var(--orange-light);
+}
+
+.demoWrap {
+    background-image: url(https://i.ytimg.com/vi/Hm7a-HGusPg/maxresdefault.jpg);
+}
+
+.statsDispalyWrapper {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.statBox {
+    width: 270px;
+    padding: 15px;
+    position: relative;
+}
+
+.statTitleWrap {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+.statRow {
+    position: relative;
+    margin-bottom: 13px;
+    padding-bottom: 5px;
+    z-index: 5;
+}
+
+.statRow:before {
+    --s: 10px;
+    content: "";
+    width: 7px;
+    height: calc(100% - 20px);
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    clip-path: polygon(100% 0, 100% 100%, var(--s) 100%, 0 calc(100% - var(--s)), 0 0);
+}
+
+.statContent {
+    z-index: 6;
+    position: relative;
+    padding: 10px 10px 5px 26px;
+    text-align: left;
+    line-height: 1;
+}
+
+.statContentTitle {
+    font-size: 1.4rem;
+}
+
+.statContentValue {
+    min-width: 90px;
+    font-size: 1.6rem;
+}
+
+.statRowBackground {
+    --b: 5px;
+    /* border */
+    --s: 15px;
+    /* size of the cut */
+    --s2: 30px;
+    /* size of the cut */
+    --c: #fff;
+
+    opacity: .5;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    position: absolute;
+
+    background: green;
+
+    border: var(--b) solid var(--c);
+    border-right: none;
+    border-radius: 0;
+
+    background: linear-gradient(45deg, var(--c) calc(0.707*var(--s) + var(--b)), #0000 0) border-box;
+    background-color: grey;
+
+    clip-path: polygon(100% 0, 100% 100%, var(--s) 100%, 0 calc(100% - var(--s)), 0 0);
+
+}
+
+.legendImage {
+    max-width: 100px;
+}
+
+
+
+
+
+
+.statBoxBackground {
+    --b: 5px;
+    /* border */
+    --s: 15px;
+    /* size of the cut */
+    --s2: 30px;
+    /* size of the cut */
+    --c: #fff;
+
+    position: absolute;
+
+
+    opacity: .5;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+
+    border: var(--b) solid var(--c);
+    border-radius: 0;
+
+    background: linear-gradient(-135deg, var(--c) calc(0.707*var(--s) + var(--b)), #0000 0) border-box,
+        linear-gradient(45deg, var(--c) calc(0.707*var(--s2) + var(--b)), #0000 0) border-box;
+    background-color: #000;
+
+    clip-path: polygon(0 0, calc(100% - var(--s)) 0, 100% var(--s), 100% 100%, var(--s2) 100%, 0 calc(100% - var(--s2)));
+
+}
+
+.rankStat {
+    display: flex;
+    align-items: center;
+}
+
+.legendTitle {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    z-index: 9999999;
+    position: relative;
+}
+
+.legendName {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: -5px;
+}
+
+.rankStat img {
+    max-width: 58px;
+    margin-top: -31px;
+    margin-left: 8px;
+}
+
+.apex-form-switch .form-check-input:checked {
+    background-color: var(--red) !important;
+    border-color: var(--dark-red) !important;
+}
+
+.apex-form-switch .form-check-input {
+    border-radius: 0 !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-.5 -.5 6 6'%3e%3Crect width='5' height='5' style='fill:%23B93038' /%3E%3C/svg%3E") !important;
+}
+
+.apex-form-switch .form-check-input:checked {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-.5 -.5 6 6'%3e%3Crect width='5' height='5' style='fill:white' /%3E%3C/svg%3E") !important;
+}
+
+.apex-form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-.5 -.5 6 6'%3e%3Crect width='5' height='5' style='fill:%23FF501A' /%3E%3C/svg%3E") !important;
+}
+
+.viewStatsLink {
+    text-decoration: none;
+    display: inline-block;
+}
